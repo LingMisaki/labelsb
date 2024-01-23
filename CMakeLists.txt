@@ -11,8 +11,8 @@ set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Svg)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(Qt${QT_VERSION} COMPONENTS ${REQUIRED_LIBS} REQUIRED)
-set(CMAKE_PREFIX_PATH "/home/lingmisaki/Documents/opencv4.8.0install")
-find_package(OpenCV 4.8.0 REQUIRED)
+# set(CMAKE_PREFIX_PATH "/home/lingmisaki/Documents/opencv4.8.0install")
+find_package(OpenCV REQUIRED)
 
 include_directories(.)
 
