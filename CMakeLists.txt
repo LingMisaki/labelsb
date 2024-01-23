@@ -5,13 +5,14 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
-set(CMAKE_PREFIX_PATH "/home/ubuntu/Qt5.12.12/5.12.12/gcc_64")
 set(QT_VERSION 5)
 set(REQUIRED_LIBS Core Gui Widgets Svg)
 set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Svg)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(Qt${QT_VERSION} COMPONENTS ${REQUIRED_LIBS} REQUIRED)
-find_package(OpenCV REQUIRED)
+set(CMAKE_PREFIX_PATH "/home/lingmisaki/Documents/opencv4.8.0install")
+find_package(OpenCV 4.8.0 REQUIRED)
 
 include_directories(.)
 

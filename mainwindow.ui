@@ -344,6 +344,16 @@
        <string>风车装甲板</string>
       </property>
      </item>
+     <item>
+      <property name="text">
+       <string>雷达整车</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>雷达装甲板</string>
+      </property>
+     </item>
     </widget>
     <widget class="QLabel" name="modeText">
      <property name="geometry">
